@@ -17,11 +17,17 @@ public class FileManipulator implements Runnable{
 
     }
     public void initialHashset(){
-        
+        while(scanner.hasNextLine() == true) {
+            String temp = scanner.nextLine();
+            fileToList.add(temp);
+        }
+    }
+    public int numberofWords(){
+        return fileToList.size;
     }
 
     public void maxLength(){
-
+        
     }
 
 
